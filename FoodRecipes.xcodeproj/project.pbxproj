@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BF0E0E841F70DA2000A15751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0E831F70DA2000A15751 /* AppDelegate.swift */; };
-		BF0E0E861F70DA2000A15751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0E851F70DA2000A15751 /* ViewController.swift */; };
 		BF0E0E891F70DA2000A15751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0E0E871F70DA2000A15751 /* Main.storyboard */; };
 		BF0E0E8C1F70DA2000A15751 /* FoodRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0E8A1F70DA2000A15751 /* FoodRecipes.xcdatamodeld */; };
 		BF0E0E8E1F70DA2000A15751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0E0E8D1F70DA2000A15751 /* Assets.xcassets */; };
 		BF0E0E911F70DA2000A15751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0E0E8F1F70DA2000A15751 /* LaunchScreen.storyboard */; };
 		BF0E0E9C1F70DA2000A15751 /* FoodRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0E9B1F70DA2000A15751 /* FoodRecipesTests.swift */; };
 		BF0E0EA71F70DA2000A15751 /* FoodRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0EA61F70DA2000A15751 /* FoodRecipesUITests.swift */; };
+		BF0E0EB51F70DF7000A15751 /* FoodListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0EB41F70DF7000A15751 /* FoodListTableViewController.swift */; };
+		BF0E0EB71F70E3FE00A15751 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0EB61F70E3FE00A15751 /* FoodCell.swift */; };
+		BF0E0EB91F70E73D00A15751 /* RecipeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0EB81F70E73D00A15751 /* RecipeListTableViewController.swift */; };
+		BF0E0EBB1F7196F000A15751 /* AddFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E0EBA1F7196F000A15751 /* AddFoodTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		BF0E0E801F70DA2000A15751 /* FoodRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0E0E831F70DA2000A15751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF0E0E851F70DA2000A15751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF0E0E881F70DA2000A15751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF0E0E8B1F70DA2000A15751 /* FoodRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodRecipes.xcdatamodel; sourceTree = "<group>"; };
 		BF0E0E8D1F70DA2000A15751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		BF0E0EA21F70DA2000A15751 /* FoodRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0E0EA61F70DA2000A15751 /* FoodRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecipesUITests.swift; sourceTree = "<group>"; };
 		BF0E0EA81F70DA2000A15751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0E0EB41F70DF7000A15751 /* FoodListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewController.swift; sourceTree = "<group>"; };
+		BF0E0EB61F70E3FE00A15751 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		BF0E0EB81F70E73D00A15751 /* RecipeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewController.swift; sourceTree = "<group>"; };
+		BF0E0EBA1F7196F000A15751 /* AddFoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				BF0E0E831F70DA2000A15751 /* AppDelegate.swift */,
-				BF0E0E851F70DA2000A15751 /* ViewController.swift */,
 				BF0E0E871F70DA2000A15751 /* Main.storyboard */,
+				BF0E0EB61F70E3FE00A15751 /* FoodCell.swift */,
 				BF0E0E8D1F70DA2000A15751 /* Assets.xcassets */,
 				BF0E0E8F1F70DA2000A15751 /* LaunchScreen.storyboard */,
 				BF0E0E921F70DA2000A15751 /* Info.plist */,
 				BF0E0E8A1F70DA2000A15751 /* FoodRecipes.xcdatamodeld */,
+				BF0E0EB41F70DF7000A15751 /* FoodListTableViewController.swift */,
+				BF0E0EB81F70E73D00A15751 /* RecipeListTableViewController.swift */,
+				BF0E0EBA1F7196F000A15751 /* AddFoodTableViewController.swift */,
 			);
 			path = FoodRecipes;
 			sourceTree = "<group>";
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF0E0E861F70DA2000A15751 /* ViewController.swift in Sources */,
+				BF0E0EB91F70E73D00A15751 /* RecipeListTableViewController.swift in Sources */,
 				BF0E0E841F70DA2000A15751 /* AppDelegate.swift in Sources */,
+				BF0E0EBB1F7196F000A15751 /* AddFoodTableViewController.swift in Sources */,
+				BF0E0EB71F70E3FE00A15751 /* FoodCell.swift in Sources */,
+				BF0E0EB51F70DF7000A15751 /* FoodListTableViewController.swift in Sources */,
 				BF0E0E8C1F70DA2000A15751 /* FoodRecipes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5995Q48X5V;
 				INFOPLIST_FILE = FoodRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.betalantz.FoodRecipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5995Q48X5V;
 				INFOPLIST_FILE = FoodRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.betalantz.FoodRecipes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
